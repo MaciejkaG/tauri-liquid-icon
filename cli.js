@@ -52,7 +52,7 @@ ${COLORS.bold}Usage:${COLORS.reset}
 
 ${COLORS.bold}Required Arguments:${COLORS.reset}
   --icon, -i <path>      Path to the .icon file (Icon Composer asset)
-  --output, -o <path>    Output directory (e.g., ./src-tauri/resources)
+  --output, -o <path>    Output directory of Assets.car (e.g., ./src-tauri/resources)
 
 ${COLORS.bold}Optional Arguments:${COLORS.reset}
   --name, -n <name>      Icon name (default: 'AppIcon')
