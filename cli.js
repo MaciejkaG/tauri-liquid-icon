@@ -55,7 +55,7 @@ ${COLORS.bold}Required Arguments:${COLORS.reset}
   --output, -o <path>    Output directory of Assets.car (e.g., ./src-tauri/resources)
 
 ${COLORS.bold}Optional Arguments:${COLORS.reset}
-  --name, -n <name>      Icon name (default: 'AppIcon')
+  --name, -n <name>      Icon name (default: filename of --icon)
   --tauri-dir <path>     Tauri directory (default: ./src-tauri)
   --min-target <version> Minimum deployment target (default: 14.0)
   --help, -h             Show this help message
@@ -82,7 +82,7 @@ function parseArgs() {
   const parsed = {
     icon: null,
     output: null,
-    name: "AppIcon",
+    name: null,
     tauriDir: "./src-tauri",
     minTarget: "10.13",
   };
@@ -126,6 +126,14 @@ function parseArgs() {
           log('\nUse --help for usage information');
           process.exit(1);
         }
+    }
+  }
+
+  if (!parsed.name) {
+    if (parsed.icon) {
+      parsed.name = basename(parsed.icon, '.icon');
+    } else {
+      parsed.name = "AppIcon";
     }
   }
 
