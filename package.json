@@ -18,7 +18,8 @@
     "liquid-icon",
     "actool"
   ],
-  "author": "",
+  "author": "Maciej Gomoła <me@mcjk.cc> (https://mcjk.cc/)",
+  "funding": "https://ko-fi.com/mcjk",
   "license": "MIT",
   "engines": {
     "node": ">=16.0.0"
