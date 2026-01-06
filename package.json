@@ -4,6 +4,7 @@
   "description": "CLI tool to integrate Icon Composer (.icon) assets into Tauri macOS applications",
   "main": "index.js",
   "type": "module",
+  "repository": "https://github.com/MaciejkaG/tauri-liquid-icon",
   "bin": {
     "tauri-liquid-icon": "./cli.js"
   },
