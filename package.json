@@ -1,6 +1,6 @@
 {
   "name": "tauri-liquid-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool to integrate Icon Composer (.icon) assets into Tauri macOS applications",
   "main": "index.js",
   "type": "module",
